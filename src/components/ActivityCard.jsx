@@ -112,35 +112,35 @@ const ActivityCard = () => {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <div className="bg-white rounded-xl shadow-sm p-8 text-center border border-gray-100">
-        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <Zap size={32} className="text-blue-600" fill="rgb(191 219 254)" />
+      <div className="bg-white rounded-xl shadow-sm p-4 sm:p-6 md:p-8 text-center border border-gray-100">
+        <div className="w-12 h-12 md:w-16 md:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+          <Zap size={24} className="md:w-8 md:h-8 text-blue-600" fill="rgb(191 219 254)" />
         </div>
 
-        <h2 className="text-2xl font-bold mb-6 text-gray-900">Microactividad para Estudiantes</h2>
+        <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-gray-900">Microactividad para Estudiantes</h2>
 
         <div className={`transition-opacity duration-300 ${isAnimating ? 'opacity-0' : 'opacity-100'}`}>
-          <div className="mb-4">
+          <div className="mb-3 md:mb-4">
             <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(currentActivity.category)}`}>
               {currentActivity.category}
             </span>
           </div>
 
-          <h3 className="text-2xl font-bold text-blue-700 mb-3">{currentActivity.title}</h3>
+          <h3 className="text-xl md:text-2xl font-bold text-blue-700 mb-3">  {currentActivity.title}</h3>
 
-          <div className="inline-flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full text-sm text-gray-600 mb-4">
-            <Clock size={16} />
+          <div className="inline-flex items-center gap-2 bg-gray-100 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm text-gray-600 mb-3 md:mb-4">
+            <Clock size={14} className="md:w-4 md:h-4" />
             <span>{currentActivity.duration}</span>
           </div>
 
-          <p className="text-lg text-gray-700 mb-4 max-w-md mx-auto leading-relaxed">
+          <p className="text-base md:text-lg text-gray-700 mb-3 md:mb-4 max-w-md mx-auto leading-relaxed px-2">
             {currentActivity.description}
           </p>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 md:p-4 mb-4 md:mb-6">
             <div className="flex items-start gap-2">
-              <BookOpen size={18} className="text-amber-700 mt-0.5 flex-shrink-0" />
-              <p className="text-sm text-amber-800 text-left">
+              <BookOpen size={16} className="md:w-[18px] md:h-[18px] text-amber-700 mt-0.5 flex-shrink-0" />
+              <p className="text-xs md:text-sm text-amber-800 text-left">
                 <strong>Consejo:</strong> {currentActivity.tip}
               </p>
             </div>
@@ -148,24 +148,24 @@ const ActivityCard = () => {
         </div>
 
         <button
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center gap-2 mx-auto"
+          className="bg-blue-600 text-white px-5 md:px-6 py-2.5 md:py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center gap-2 mx-auto text-sm md:text-base"
           onClick={getNewActivity}
         >
-          <RefreshCw size={18} />
+          <RefreshCw size={16} className="md:w-[18px] md:h-[18px]" />
           Nueva Actividad
         </button>
       </div>
 
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 rounded-lg p-5">
-          <h4 className="font-bold text-purple-900 mb-2">📚 Antes de un Examen</h4>
-          <p className="text-sm text-purple-800">
+      <div className="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+        <div className="bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 rounded-lg p-4 md:p-5">
+          <h4 className="font-bold text-purple-900 mb-2 text-sm md:text-base">📚 Antes de un Examen</h4>
+          <p className="text-xs md:text-sm text-purple-800">
             Practica respiración cuadrada o visualización positiva para reducir la ansiedad.
           </p>
         </div>
-        <div className="bg-gradient-to-br from-green-50 to-green-100 border border-green-200 rounded-lg p-5">
-          <h4 className="font-bold text-green-900 mb-2">⏰ Durante Sesiones Largas</h4>
-          <p className="text-sm text-green-800">
+        <div className="bg-gradient-to-br from-green-50 to-green-100 border border-green-200 rounded-lg p-4 md:p-5">
+          <h4 className="font-bold text-green-900 mb-2 text-sm md:text-base">⏰ Durante Sesiones Largas</h4>
+          <p className="text-xs md:text-sm text-green-800">
             Usa la técnica Pomodoro y haz estiramientos cada hora para mantener la concentración.
           </p>
         </div>

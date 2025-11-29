@@ -6,6 +6,9 @@ export default {
     ],
     theme: {
         extend: {
+            screens: {
+                'xs': '480px',
+            },
             colors: {
                 primary: {
                     DEFAULT: 'hsl(210, 100%, 60%)',
