@@ -134,8 +134,9 @@ const StatsView = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-6">Progreso de Hábitos (Últimos 7 Días)</h3>
                 <div className="grid grid-cols-7 gap-2">
                     {weeklyHabitData.map((day, index) => {
-                        const date = new Date(day.date);
-                        console.log(date);
+                        // Parse date in local timezone to avoid UTC offset issues
+                        const [year, month, dayNum] = day.date.split('-').map(Number);
+                        const date = new Date(year, month - 1, dayNum);
                         const dayName = date.toLocaleDateString('es-ES', { weekday: 'short' });
                         const percentage = Math.round((day.completed / day.total) * 100);
 

@@ -8,7 +8,7 @@ const Layout = ({ children, activeTab, setActiveTab }) => {
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-3">
-              <img src="/brain.svg" alt="Brain" className="w-10 h-10 fill-blue-600" />
+              <img src={`${import.meta.env.BASE_URL}brain.svg`} alt="Brain" className="w-10 h-10 fill-blue-600" />
               <h1 className="text-xl font-bold text-gray-900">Estudiante Consciente</h1>
             </div>
             <nav className="flex gap-2 w-full md:w-auto justify-center">
@@ -76,7 +76,7 @@ const Layout = ({ children, activeTab, setActiveTab }) => {
                 className="transition-transform hover:scale-110"
                 title="ODS 3: Salud y Bienestar"
               >
-                <img src="/assets/ods-3.png" alt="ODS 3: Salud y Bienestar" className="h-16 w-16" />
+                <img src={`${import.meta.env.BASE_URL}assets/ods-3.png`} alt="ODS 3: Salud y Bienestar" className="h-16 w-16" />
               </a>
               <a
                 href="https://sdgs.un.org/es/goals/goal4"
@@ -85,7 +85,7 @@ const Layout = ({ children, activeTab, setActiveTab }) => {
                 className="transition-transform hover:scale-110"
                 title="ODS 4: Educación de Calidad"
               >
-                <img src="/assets/ods-4.png" alt="ODS 4: Educación de Calidad" className="h-16 w-16" />
+                <img src={`${import.meta.env.BASE_URL}assets/ods-4.png`} alt="ODS 4: Educación de Calidad" className="h-16 w-16" />
               </a>
               <a
                 href="https://sdgs.un.org/es/goals/goal9"
@@ -94,7 +94,7 @@ const Layout = ({ children, activeTab, setActiveTab }) => {
                 className="transition-transform hover:scale-110"
                 title="ODS 9: Industria, Innovación y Infraestructura"
               >
-                <img src="/assets/ods-9.png" alt="ODS 9: Industria, Innovación y Infraestructura" className="h-16 w-16" />
+                <img src={`${import.meta.env.BASE_URL}assets/ods-9.png`} alt="ODS 9: Industria, Innovación y Infraestructura" className="h-16 w-16" />
               </a>
             </div>
           </div>
