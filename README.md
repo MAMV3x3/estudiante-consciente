@@ -4,7 +4,7 @@
 ---
 
 ## 📘 Descripción del proyecto
-**Bienestar Digital** es una plataforma web diseñada para fomentar el bienestar emocional entre estudiantes mediante microactividades interactivas, ejercicios de relajación y tips para el manejo del estrés académico.
+**Estudiante Consciente** es una plataforma web diseñada para fomentar el bienestar emocional entre estudiantes mediante microactividades interactivas, ejercicios de relajación y tips para el manejo del estrés académico.
 
 El proyecto surge como parte de una iniciativa de **Responsabilidad Social** y busca aprovechar la tecnología para promover hábitos saludables, accesibles y prácticos que contribuyan a la salud mental en entornos educativos.
 
@@ -29,15 +29,14 @@ Desarrollar e implementar una plataforma digital que facilite estrategias de aut
 |-----|--------------|
 | **ODS 3** | Promoción de salud y bienestar mental |
 | **ODS 4** | Mejora del aprendizaje mediante autocuidado |
-| **ODS 10** | Reducción de desigualdades digitales |
-| **ODS 17** | Posible vinculación con orientación educativa |
+| **ODS 9** | Innovación y desarrollo tecnológico |
 
 ---
 
 ## 🧠 ¿Qué ofrece la plataforma?
 ✔️ Microactividades de bienestar (respiración, agradecimiento, pausa consciente)  
 ✔️ Tips prácticos para gestionar estrés escolar  
-✔️ Mini cuestionarios de estado emocional *(sin fines clínicos)*  
+✔️ Registro de estado emocional
 ✔️ Interfaz simple, accesible y motivacional
 
 ---
@@ -54,10 +53,10 @@ Desarrollar e implementar una plataforma digital que facilite estrategias de aut
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/usuario/bienestar-digital.git
+git clone https://github.com/MAMV3x3/estudiante-consciente.git
 
 # 2. Acceder al directorio
-cd bienestar-digital
+cd estudiante-consciente
 
 # 3. Instalar dependencias
 npm install
